@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+
+<body>
+    <div class="signup">
+        <div class="signup__content">
+            <h1 class=" signup__heading " >Sign Up
+                <i class="fas fa-trowel-bricks"></i>
+            </h1>
+            <h2 class="signup__caption">Sign up with </h2>
+            <div class="signup-social">
+                <div class="signup-social__item">
+                    <i class="fab fa-google signup-social__icon"></i>
+                    <span class="signup-social__text">Sign up with Google</span>
+                </div>
+                <div class="signup-social__item">
+                    <i class="fab fa-facebook signup-social__icon"></i>
+                    <span class="signup-social__text">Sign up with Facebook</span>
+                </div>
+            </div>
+            <form class="signup-form" autocomplete="off">
+                <div class="signup-form__row">
+                    <div class="signup-form__group">
+                        <label for="name" class="signup-form__label">Name </label>
+                        <div class="signup-form__validate">
+                            <input type="text" class="signup-form__input" id="name" required placeholder="Name">
+                            <div class="signup-form__check">
+                                <i class="fa fa-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="signup-form__group">
+                        <label for="email" class="signup-form__label">Email </label>
+                        <input type="email" class="signup-form__input" id="email" required placeholder="Email">
+                    </div>
+                </div>
+                <div class="signup-form__group">
+                    <label for="password" class="signup-form__label">Password </label>
+                    <input type="password" class="signup-form__input" id="password" required minlength="10"
+                        placeholder="Password">
+                </div>
+                <div class="signup-form__term">
+                    <input type="checkbox" name="" id="term">
+                    <label for="term">I have read and agree with term</label>
+                </div>
+                <button class="signup-form__submit" type="submit">
+                    <i class="fa fa-arrow-right"></i>
+                </button>
+                <p>Already signin <a href="#">Sign in</a></p>
+            </form>
+        </div>
+        <div class="signup__image">
+            <img src="" alt="">
+
+        </div>
+    </div>
+    <!-- <div class="dropdown">
+        <div class="dropdown__select">
+            <i class="fa fa-file dropdown__icon"></i>
+        <span class="dropdown__text">File type</span>
+        <i class="fa fa-caret-down 
+        dropdown__caret"></i>
+        </div>
+        <ul class="dropdown__list">
+            <li class="dropdown__item">
+                <i class="fa fa-file
+                dropdown__icon"></i>
+                <span class="dropdown__text">Markup HTML</span>
+            </li>
+            <li class="dropdown__item">
+                <i class="fa fa-file
+                dropdown__icon"></i>
+                <span class="dropdown__text">Markup HTML</span>
+            </li>
+            <li class="dropdown__item">
+                <i class="fa fa-file
+                dropdown__icon"></i>
+                <span class="dropdown__text">Markup HTML</span>
+            </li>
+            <li class="dropdown__item">
+                <i class="fa fa-file
+                dropdown__icon"></i>
+                <span class="dropdown__text">Markup HTML</span>
+            </li>
+        
+        </ul>
+    </div> -->
+    <!-- <div class="work">
+        <h2 class="work__heading">Our Works</h2>
+        <div class="work__filter">
+            <ul class="work-tab">
+                <li class="work-tab__item">All</li>
+                <li class="work-tab__item">Illustrator</li>
+                <li class="work-tab__item">UI UX</li>
+                <li class="work-tab__item">Logo</li>
+                <li class="work-tab__item">Website</li>
+            </ul>
+            <a href="#" class="work__all">View all</a>
+        </div>
+        <ul class="work__list">
+            <li class="work__item">
+                <img src="https://images.unsplash.com/photo-1652447385135-6eac80e6012b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" class="work__image">
+            </li>
+            <li class="work__item">
+                <img src="https://images.unsplash.com/photo-1652447385135-6eac80e6012b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" class="work__image">
+            </li>
+            <li class="work__item">
+                <img src="https://images.unsplash.com/photo-1652447385135-6eac80e6012b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" class="work__image">
+            </li>
+            <li class="work__item">
+                <img src="https://images.unsplash.com/photo-1652447385135-6eac80e6012b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="" class="work__image">
+            </li>
+        </ul>
+    </div> -->
+    <!-- <div class="author">
+        <img src="https://images.unsplash.com/photo-1644982649363-fae51da44eac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxMXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="" class="author__image">
+        <div class="author__content">
+            <h2 class="author__name">John Doe - Author</h2>
+            <p class="author__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nostrum necessitatibus recusandae fuga dolor in a dolore sint ea earum incidunt eius, veritatis nam? Quos voluptate nostrum quam inventore delectus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, porro incidunt? Doloremque, quas eaque pariatur facere fugiat nostrum earum? Ex inventore tenetur maiores, quam culpa nobis dolorem eveniet architecto voluptates?
+            </p>
+            <div class="author__contact">
+                contact me: <div class="author-social">
+                    <div class="author-social__item">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <div class="author-social__item">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="author-social__item">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="post">
+        <div class="post__list">
+            <div class="post__item">
+                <img src="https://images.unsplash.com/photo-1652283319954-0535ab575f06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="" class="post__image">
+                <div class="post__content">
+                    <h3 class="post__title">Lorem,lit, error ficia itaque ipsum? Lorem,lit, error ficia itaque ipsum?</h3>
+                    <img src="https://images.unsplash.com/photo-1652552338277-4723b2625108?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="" class="post__author">
+                </div>
+            </div>
+            <div class="post__item">
+                <img src="https://images.unsplash.com/photo-1652283319954-0535ab575f06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="" class="post__image">
+                <div class="post__content">
+                    <h3 class="post__title">Lorem,lit, error ficia itaque ipsum?</h3>
+                    <img src="https://images.unsplash.com/photo-1652552338277-4723b2625108?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="" class="post__author">
+                </div>
+            </div>
+            <div class="post__item">
+                <img src="https://images.unsplash.com/photo-1652283319954-0535ab575f06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="" class="post__image">
+                <div class="post__content">
+                    <h3 class="post__title">Lorem,lit, error ficia itaque ipsum?</h3>
+                    <img src="https://images.unsplash.com/photo-1652552338277-4723b2625108?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="" class="post__author">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="post">
+        <div class="post__media">
+            <img src="https://images.unsplash.com/photo-1652451488613-478cde04501d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyN3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="" class="post__image">
+            <i class="fa fa-play-circle"></i>
+        </div>
+        <div class="post__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptas ipsum perferendis voluptatum, laudantium facilis animi voluptates distinctio placeat amet at temporibus, aliquid accusantium illo, veniam ad suscipit earum laboriosam!
+
+        </div>
+    </div> -->
+    <!-- <div class="post">
+        <div class="post__left">
+            <div class="post__media">
+                <img src="https://images.unsplash.com/photo-1648737154547-b0dfd281c51e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzMXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="" class="post__image">
+                <span class="post__category">Lifestyle</span>
+                <span class="post__icon">
+                    <i class="fa fa-home"></i>
+                </span>
+            </div>
+            <div class="post-author">
+                <img src="https://images.unsplash.com/photo-1638913974071-ad0045d13691?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw0N3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="" class="post-author__avatar">
+                <span class="post-author__name">MinHieu</span>
+                <span class="post__date">31 March 2022</span>
+            </div>
+            <h3 class="post__tittle">Lorem,lit, error ficia itaque ipsum?</h3>
+            <p class="post__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, aliquid modi, ipsa sint hic illo minima accusamus voluptates deserunt voluptatem perferendis eveniet! Fugit voluptates nihil nam totam est quod reprehenderit.</p>
+        </div>
+        <div class="post__right">
+            <div class="post__item">
+                <a href="#" class="post__image post__image--small">
+                    <img src="https://images.unsplash.com/photo-1649859396073-13ff3244ec1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw1MHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="" class="post__img">
+                </a>
+                
+                <div class="post__content">
+                    <h4 class="post__tittle post__tittle--small">
+                        <a href="#" class="post__link">Lorem,lit, error ficia itaque ipsum?</a>
+                    </h4>
+                    <span class="post__date">31 March 2022</span>
+                </div>
+            </div>
+            <div class="post__item">
+                <img src="https://images.unsplash.com/photo-1649859396073-13ff3244ec1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw1MHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="" class="post__image post__image--small">
+                <div class="post__content">
+                    <h4 class="post__tittle post__tittle--small">Lorem,lit, error ficia itaque ipsum?</h4>
+                    <span class="post__date">31 March 2022</span>
+                </div>
+            </div>
+            <div class="post__item">
+                <img src="https://images.unsplash.com/photo-1649859396073-13ff3244ec1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw1MHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="" class="post__image post__image--small">
+                <div class="post__content">
+                    <h4 class="post__tittle post__tittle--small">Lorem,lit, error ficia itaque ipsum?</h4>
+                    <span class="post__date">31 March 2022</span>
+                </div>
+            </div>
+            <div class="post__item">
+                <img src="https://images.unsplash.com/photo-1649859396073-13ff3244ec1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw1MHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" alt="" class="post__image post__image--small">
+                <div class="post__content">
+                    <h4 class="post__tittle post__tittle--small">Lorem,lit, error ficia itaque ipsum? r ficia itaqsue ipsum?</h4>
+                    <span class="post__date">31 March 2022</span>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <form autocomplete="off">
+        <label for="title">Title</label>
+        <input type="text" required minlength="5" maxlength="10" readonly disabled >
+        <input type="number" min="2" max="10" >
+        <input type="email" value="evondev" name="email" placeholder=""id="title">
+        <input type="password" >
+        <input type="time">
+        <input type="date">
+        <input type="radio">
+        <input type="radio" name="gender">
+        <input type="file">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <textarea name="content" ></textarea>
+        <select name="" id="">
+            <option value="t">abcdef</option>
+            <option value="t">abcdef</option>
+            <option value="t">abcdef</option>
+        </select>
+
+    </form> -->
+
+    <!-- <div class="checkbox">
+        <input type="checkbox" name="" id="checkbox__input" class="checkbox__input">
+        <label for="checkbox__input" class="checkbox__label">I agree the term</label>
+    </div>
+    <div class="radio">
+        <input type="radio" name="" id="radio__input" class="radio__input">
+        <label for="radio__input" class="radio__label">I agree the term</label>
+    </div>
+    <div class="radio-demo"></div> -->
+    <!-- <div class="file">
+        <input type="file" id="file__input" class="file__input">
+        <label for="file__input" class="file__label">
+            <i class="fa fa-upload"></i>
+        </label>
+    </div> -->
+    <!-- <div class="checkbox2">
+        <input type="checkbox" name="" id="checkbox2__input" class="checkbox2__input">
+        <label for="checkbox2__input" class="checkbox2__label">
+            <div class="checkbox2__spin"></div>
+        </label>
+    </div> -->
+    <!-- <input type="text" class="input-style"
+        placeholder="Name">
+        <button class="button-style">Button</button>
+        <textarea name="" id="" cols="30" rows="10" class="input-style"></textarea> -->
+
+    <!-- WEB SIGNUP -->
+    <!-- <div class="table">
+        <table>
+            <thead>
+                <tr>
+                <th><input type="checkbox" name="" id=""></th>
+                <th>Tipo</th>
+                <th>Cordio</th>
+                <th>Description</th>
+                <th>Marca</th>
+                <th>Client</th>
+                <th>Active</th>
+                <th>Cardio</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td><i class="fa fa-truck"></i></td>
+                <td>PR-005</td>
+                <td ><p class="desc">Lorem,lit, error ficia itaque ipsum? Lorem ipsum dolor sit amet</p></td>
+                <td>HP</td>
+                <td>
+                    <div class="toggle">
+                        <input type="checkbox" name="client" id="toggle-client" class="toggle-input">
+                        <label for="toggle-client" class="toggle-label"></label>
+                </div></td>
+                <td>
+                    <div class="toggle">
+                        <input type="checkbox" name="active" id="toggle-active" class="toggle-input">
+                        <label for="toggle-active" class="toggle-label"></label>
+                </div>
+                </td>
+                <td><span class="status status--active">Active</span></td>
+                <td><div class="action">
+                    <i class="fa fa-edit action-icon"></i>
+                    <i class="fa fa-circle action-icon"></i>
+                    <i class="fa fa-trash action-icon"></i>
+                </div></td>
+            </tr>
+        
+        </tbody>
+        </table>
+    </div> -->
+    <!-- <div class="container"></div> -->
+    <!-- <div class="boxed"></div> -->
+    <!-- <div class="loading">
+        <div style="--value: 1"></div>
+        <div style="--value: 2"></div>
+        <div style="--value: 3"></div>
+        <div style="--value: 4"></div>
+        <div style="--value: 5"></div>
+        <div style="--value: 6"></div>
+        <div style="--value: 7"></div>
+        <div style="--value: 8"></div>
+        
+    </div> -->
+    <!-- <div class="grid3">
+        <img src="https://images.unsplash.com/photo-1652990972729-d2f9b4ad5eda?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyM3x8fGVufDB8fHx8&auto=format&fit=crop&w=500" alt="" class="grid-item">
+        <img src="https://images.unsplash.com/photo-1652972756954-70d7d5ecc0e5?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500" alt="" class="grid-item">
+        <img src="https://images.unsplash.com/photo-1649859395314-bdea587e4524?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500" alt="" class="grid-item">
+        <img src="https://images.unsplash.com/photo-1644982649363-fae51da44eac?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzNHx8fGVufDB8fHx8&auto=format&fit=crop&w=500" alt="" class="grid-item">
+        <img src="https://images.unsplash.com/photo-1644982652061-df82282e178d?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500" alt="" class="grid-item">
+        <img src="https://images.unsplash.com/photo-1653007939376-7ab3d9e95f8b?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0M3x8fGVufDB8fHx8&auto=format&fit=crop&w=500" alt="" class="grid-item">
+        
+    </div> -->
+    <!-- <div class="icon">
+        <i class="fa fa-user"></i>
+    </div> -->
+    <!-- <div class="grid-layout">
+        <div class="header">header</div>
+        <div class="menu">menu</div>
+        <div class="hero">hero</div>
+        <div class="main">main</div>
+        <div class="banner">banner</div>
+        <div class="extra">extra</div>
+        <div class="image">image</div>
+    </div> -->
+    <!-- <div class="responsive-media">
+        <img src="https://images.unsplash.com/photo-1653504387571-324b216f37b1?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8&auto=format&fit=crop&w=500" alt="">
+        <iframe width="727" height="409" src="https://www.youtube.com/embed/Yyj0DJ5nejg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div> -->
+    <!-- <div class="card">
+        <img src="https://images.unsplash.com/photo-1653504387571-324b216f37b1?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8&auto=format&fit=crop&w=500" alt="" class="card-image">
+        <div class="card-content">
+            <h3 class="card-title">This is card title</h3>
+        </div>
+    </div> -->
+    <!-- <div class="custom-checkbox">
+        <input type="checkbox" class="custom-checkbox-input" id="checkbox" placeholder="">
+        <label for="checkbox"  class="custom-checkbox-box">
+            <i class="fa fa-star custom-checkbox-icon"></i>
+        </label>
+        <label for="checkbox" clas="custom-checkbox-label">Title of checkbox</label>
+    </div> -->
+    <!-- <div class="polygon"></div> -->
+    <!-- <div class="boxed">Lorem,lit, error ficia itaque ipsum? Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod, ea voluptates quam, deleniti modi eos reprehenderit explicabo odio nesciunt saepe dolor sint minus, fugiat dignissimos doloribus aliquid ut autem? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur modi assumenda dolorum consequatur aliquid sed ullam, quo sint praesentium aperiam, suscipit voluptates ad dolore, esse ducimus impedit excepturi architecto unde.</div> -->
+    <!-- <div class="form-layout">
+        <div class="form-group">
+            <input type="text" class="form-input" placeholder="First Name">
+            <input type="text" class="form-input" placeholder="Last Name">
+        
+        
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-input" placeholder="First Name">
+            <input type="text" class="form-input" placeholder="Last Name">
+        
+        
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-input" placeholder="Address">
+        
+        
+        
+        </div>
+    </div> -->
+</body>
+
+</html>
